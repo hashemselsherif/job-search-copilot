@@ -114,7 +114,7 @@ flowchart LR
   ENG -. roadmap .-> M[Sourcing and matching engine<br/>scans boards, predicts odds, applies first]
 
   classDef now fill:#E8F0FF,stroke:#635BFF,color:#1C1C1E;
-  classDef soon fill:#F5EAFF,stroke:#AF52DE,color:#1C1C1E,stroke-dasharray:5 4;
+  classDef soon fill:#F5EAFF,stroke:#AF52DE,color:#1C1C1E;
   class A,B,C,P,X,AN,ENG now;
   class M soon;
 ```
