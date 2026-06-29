@@ -1,0 +1,18 @@
+# ──────────────────────────────────────────────────────────────────────────
+# PUBLIC SHOWCASE REPO — whitelist model.
+#
+# This repo is published as a portfolio piece. The implementation source
+# (index.html, demo.html, server.js, build-demo.js, demo-src/, versions/,
+# demo-deploy/, .env, etc.) must NEVER be committed.
+#
+# Strategy: ignore EVERYTHING at the root, then explicitly allow only the
+# showcase docs and assets below. This holds even against `git add -A`.
+# ──────────────────────────────────────────────────────────────────────────
+
+# 1) Ignore everything.
+/*
+
+# 2) Allow only the showcase surface back in.
+!.gitignore
+!README.md
+!assets/
