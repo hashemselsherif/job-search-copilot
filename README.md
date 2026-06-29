@@ -14,7 +14,6 @@
 
 **https://job-search-demozip--hashemselsherif.replit.app**
 
-_No login. Fully interactive. Runs on synthetic data — every name, company, and number is fake._
 
 <br/>
 
