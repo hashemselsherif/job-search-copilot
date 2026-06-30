@@ -30,7 +30,7 @@ So with no key set, the app still runs and degrades gracefully.
 ## Endpoints
 
 - `GET /api/health` → `{ai: <bool>, web: <bool>, model, fastModel, deepModel}` — capability probe; reports the three-tier model map and whether web search is available.
-- `POST /api/ai` `{prompt, blocks, fast, deep, web, cachePrefix}` → `{text}` — forwards to Anthropic. `fast`→Haiku, `deep`→Opus, else Sonnet; `web`→enables Anthropic's `web_search` tool (used to find live job postings when Gmail has no JD) and pins to a search-capable model. `cachePrefix` is sent as an ephemeral cache block. Per-call token usage + cost is logged to the console (note: web searches bill ~$10/1k searches on top of tokens). Relays upstream errors.
+- `POST /api/ai` `{prompt, blocks, fast, deep, web, cachePrefix}` → `{text}` — forwards to Anthropic. `deep`→**Claude Opus 4.8** (profile, fit, interview prep, all narrative generation), `fast`→Haiku 4.5 (classification/refreshers), else Sonnet 4.6 (extraction); `web`→enables Anthropic's `web_search` tool (used to find live job postings when Gmail has no JD) and pins to a search-capable model. `cachePrefix` is sent as an ephemeral cache block. Per-call token usage + cost is logged to the console (note: web searches bill ~$10/1k searches on top of tokens). Relays upstream errors.
 
 ## Before exposing this publicly — important
 

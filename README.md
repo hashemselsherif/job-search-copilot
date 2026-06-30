@@ -2,7 +2,7 @@
 
 # Job Search Copilot
 
-**An AI command center for the job hunt — it aggregates your entire search, reasons over it with Claude, and acts on your behalf.**
+**An AI command center for the job hunt — it aggregates your entire search, reasons over it with Claude Opus 4.8, and acts on your behalf.**
 
 <br/>
 
@@ -60,7 +60,7 @@ This is the part that isn't just a tracker. The copilot **drafts and sends** out
 
 ## How AI is leveraged
 
-Claude is the reasoning engine, not a chatbot bolted on the side. It is used to:
+Claude is the reasoning engine, not a chatbot bolted on the side. The highest-stakes work — profile synthesis, fit analysis, interview prep, and the daily insight — runs on **Claude Opus 4.8** (Anthropic's most capable model); fast classification and factual lookups route to lighter models, so quality is never traded away where it counts.
 
 | Job | What Claude does |
 | --- | --- |
@@ -125,7 +125,7 @@ _Solid = shipping today · dashed = roadmap._
 ## Engineering notes
 
 - **Single-file front end** — the entire app is one self-contained, dependency-free HTML/JS file; the live demo runs with zero backend by mocking the AI and connector layer.
-- **Zero-dependency Node proxy** — central AI gateway with per-IP rate limiting and a capability-probe (`/api/health`) the front end uses to discover whether central AI is available.
+- **Zero-dependency Node proxy** — central AI gateway with per-IP rate limiting, a three-tier model router (Opus 4.8 for reasoning, Sonnet for extraction, Haiku for classification), and a capability-probe (`/api/health`) the front end uses to discover which models are available.
 - **Sanitizing build pipeline** — a build step regenerates the public demo from the real connected app, swapping in synthetic data and stripping every personal identifier at build time, so the shareable artifact is provably free of private data.
 - **Accessible & responsive** — keyboard focus states, reduced-motion support, and a layout that goes from a mobile column to a desktop command board.
 
