@@ -76,22 +76,31 @@ A form gives you the same value on day 100 as on day 1. A flywheel gives you mor
 
 ## What it does today
 
-Everything below is live in the demo right now — five facets of the same loop, all reading from the one profile at its center.
+Everything below is live in the demo right now. Each capability reads from the one profile at the center — and each earns its place not just by what it *does*, but by what it *spares you*.
 
 ### 1 · Profile synthesis — the heart
-The engine reads your materials and **reasons out a living candidate profile**: evidence-backed strengths, target roles, differentiators, and honest gaps. Built once by reasoning, refined continuously by everything that happens next. This is the asset every other feature draws on.
+Reads your résumé, GitHub, and notes and **reasons out a living candidate profile** — evidence-backed strengths, target roles, differentiators, honest gaps. Built by reasoning, not a form.
+*Why it matters: one source of truth about you that every other feature draws on — and it only sharpens from here.*
 
-### 2 · Command-center aggregation
-Scattered signal becomes one ranked board — recruiter threads, interview invites, follow-ups, job postings, and LinkedIn outreach, all slotted automatically into who's **interviewing**, **networking**, **applied**, and **new leads**, each with a fit score and the *next step that matters*.
+### 2 · Inbox & calendar watch — always on top of things
+It reads your **Gmail and Calendar** for you — recruiter threads, interview invites, replies, follow-ups, scheduling notes — interprets what each one *means*, and keeps your board current automatically. Every refresh re-scans, so what you see is never stale.
+*Why it matters: you stay **on top of everything without logging a thing**. The next interview is never a surprise, a warm reply never goes cold in an unread pile, and no thread rots because you forgot it existed.*
 
-### 3 · Fit scoring & classification
-Opus 4.8 reads each opportunity against your profile and assigns a **fit score with its reasoning** — not a keyword match, but an argument for *why* a role fits, where you're strong, and where the gaps are. Every thread is auto-classified into a pipeline stage, so nothing rots in your inbox.
+### 3 · One ranked command center
+Folds every signal — inbox, calendar, job postings, LinkedIn outreach — into a single board, sorted into who's **interviewing**, **networking**, **applied**, and **new leads**, each with a fit score and the *next step that matters*.
+*Why it matters: the whole search in one view, ranked by importance — so you act on what matters most, not on whatever shouts loudest.*
 
-### 4 · Analytics & positioning
-LinkedIn reach, response rates, and momentum tracked over time — so the search is **measured, not guessed**, and the profile keeps learning from how the market actually responds to you.
+### 4 · Fit scoring & classification
+Opus 4.8 reads each opportunity against your profile and assigns a **fit score with its reasoning** — an argument for *why* a role fits, where you're strong, where the gaps are — and auto-files every thread into the right stage.
+*Why it matters: you spend energy where you'll actually win, and nothing slips through the cracks.*
 
-### 5 · Execution — it acts, you approve
-This is the part that isn't just a tracker. The copilot **drafts and sends** outreach, follow-ups, nudges, and scheduling notes, preps you for interviews, and surfaces the **single highest-leverage move** each day. **You approve, it delivers** — nothing leaves without you.
+### 5 · Analytics & positioning
+Tracks LinkedIn reach, response rates, and momentum over time.
+*Why it matters: a search that's **measured, not guessed** — and a profile that keeps learning from how the market really responds to you.*
+
+### 6 · Execution — it acts, you approve
+Not just a tracker: it **drafts and sends** outreach, follow-ups, nudges, and scheduling notes, preps you for interviews, and surfaces the **single highest-leverage move** each day.
+*Why it matters: the best move of the day actually gets made — **you approve, it delivers**, nothing leaves without you.*
 
 <div align="center">
 <img alt="How it works — from scattered sources to one command center" src="assets/screenshots/how-it-works.png" width="760">
