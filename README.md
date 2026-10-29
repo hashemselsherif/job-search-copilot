@@ -6,17 +6,6 @@
 
 <br/>
 
-### ▶︎ Try the live demo
-
-<a href="https://job-search-demozip--hashemselsherif.replit.app">
-  <img alt="Launch the live demo" src="https://img.shields.io/badge/▶︎_LAUNCH_LIVE_DEMO-Open_in_browser-635BFF?style=for-the-badge&labelColor=1C1C1E" height="46">
-</a>
-
-**https://job-search-demozip--hashemselsherif.replit.app**
-
-
-<br/>
-
 <img alt="Job Search Copilot — command center dashboard" src="assets/screenshots/dashboard.png" width="860">
 
 </div>
@@ -31,7 +20,7 @@ The signal that actually decides your search is real and knowable — who replie
 
 The answer isn't one more tracker to keep current by hand. It's a system that holds the whole picture for you, **thinks about it continuously**, and hands you the next move.
 
-> This repository is a **public showcase** — a live demo, screenshots, and how it's built. The implementation source is kept private.
+> This repository is a **public showcase** — screenshots and how it's built. The implementation source is kept private.
 
 ---
 
@@ -76,7 +65,7 @@ A form gives you the same value on day 100 as on day 1. A flywheel gives you mor
 
 ## What it does today
 
-Everything below is live in the demo right now. Each capability reads from the one profile at the center — and each earns its place not just by what it *does*, but by what it *spares you*.
+Everything below runs in the app today. Each capability reads from the one profile at the center — and each earns its place not just by what it *does*, but by what it *spares you*.
 
 ### 1 · Profile synthesis — the heart
 Reads your résumé, GitHub, and notes and **reasons out a living candidate profile** — evidence-backed strengths, target roles, differentiators, honest gaps. Built by reasoning, not a form.
@@ -165,7 +154,7 @@ _The solid path runs today. The dotted arrows are the loop closing — outcomes 
 
 ## Engineering notes
 
-- **Single-file front end** — the entire app is one self-contained, dependency-free HTML/JS file; the live demo runs with zero backend by mocking the AI and connector layer.
+- **Single-file front end** — the entire app is one self-contained, dependency-free HTML/JS file; the public demo build runs with zero backend by mocking the AI and connector layer.
 - **Three-tier reasoning router** — a zero-dependency Node proxy routes each call to the right model (Opus 4.8 for reasoning and generation, Sonnet for extraction, Haiku for classification), with per-IP rate limiting and a capability-probe (`/api/health`) the front end uses to discover which models are live.
 - **Sanitizing build pipeline** — a build step regenerates the public demo from the real connected app, swapping in synthetic data and stripping every personal identifier at build time, so the shareable artifact is provably free of private data.
 - **Accessible & responsive** — keyboard focus states, reduced-motion support, and a layout that goes from a mobile column to a desktop command board.
@@ -174,13 +163,9 @@ _The solid path runs today. The dotted arrows are the loop closing — outcomes 
 
 <div align="center">
 
-### Try it for yourself
+### See it in action
 
-<a href="https://job-search-demozip--hashemselsherif.replit.app">
-  <img alt="Launch the live demo" src="https://img.shields.io/badge/▶︎_LAUNCH_LIVE_DEMO-Open_in_browser-635BFF?style=for-the-badge&labelColor=1C1C1E" height="46">
-</a>
-
-**https://job-search-demozip--hashemselsherif.replit.app**
+[Command center](assets/screenshots/dashboard.png) · [Candidate profile](assets/screenshots/profile.png) · [How it works](assets/screenshots/how-it-works.png)
 
 <br/>
 
